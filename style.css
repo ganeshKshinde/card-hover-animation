@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    font-family: 'Courier New', Courier, monospace;
+}
+.container {
+    text-transform: uppercase;
+    width: 30%;
+    height: 25vh;
+    background-color: white;
+    /* padding: 4em 0; */
+    border-radius: 0.5em;
+}
+.inner {
+    padding: 2em;
+    background-color: tomato;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    clip-path: circle(8% at 1% 100%);
+    transition: all 1s;
+}
+.container:hover .inner {
+    clip-path: circle(70%);
+}
